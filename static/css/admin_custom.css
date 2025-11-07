@@ -1,0 +1,59 @@
+[data-theme="light"] {
+  --primary: #EC4899;
+  --secondary: #8B5CF6;
+  --accent: #F59E0B;
+  --bg-primary: #FDFBF7;
+  --bg-card: #FFFFFF;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --border: #E5E7EB;
+}
+
+/* Теплая минималистичная цветовая схема для темной темы */
+[data-theme="dark"] {
+  --primary: #EC4899;
+  --secondary: #8B5CF6;
+  --accent: #F59E0B;
+  --bg-primary: #0F1419;
+  --bg-card: #1A1F27;
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --border: #2D3748;
+}
+
+/* Общие стили для обеих тем */
+body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  transition: all 0.3s ease;
+}
+
+/* Закругленные углы */
+.module, .dashboard .module table, .breadcrumbs, .card {
+  border-radius: 12px !important;
+  transition: all 0.3s ease;
+}
+
+/* Карточки */
+.module, .breadcrumbs, #content-related, .card {
+  background: var(--bg-card) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Кнопки с закруглениями */
+.btn {
+  border-radius: 8px !important;
+  transition: all 0.3s ease;
+}
+
+/* Текст */
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6,
+.module h1, .module h2, .module h3, .module h4, .module h5, .module h6 {
+  color: var(--text-primary) !important;
+}
+
+.text-muted, .quiet {
+  color: var(--text-secondary) !important;
+}
